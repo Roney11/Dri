@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Dri S2</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+        .button {
+            display: flex;
+            
+        }
+        .button button {
+            width: 50px;
+            height: 40px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 20%;
+            border-style: none;
+            margin: 10px;
+        }
+        .button button:hover {
+            background-color: aquamarine;
+            width: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Vida, quer namorar comigo?</h1>
+        </div>
+        <div class="button">
+            <button class="btn1">sim</button>
+            <button class="btn2" onm>não</button>
+         
+        </div>
+    </section>
+
+    <script>
+        const text = document.querySelector('h1')
+        document.querySelector('.btn2').addEventListener('click',()=>{
+            text.innerHTML = "Que tristreza!"
+            document.querySelector('.button').style.display ='none'
+        })
+        document.querySelector('.btn1').addEventListener('click',()=>{
+            document.querySelector('.btn1').style.display ='none'
+        })
+        
+    </script>
+</body>
+</html>
